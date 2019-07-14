@@ -1,0 +1,35 @@
+Index: app/src/main/java/com/coolweather/android/db/Country.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.coolweather.android.db;\r\n\r\n\r\n\r\nimport org.litepal.crud.DataSupport;\r\n\r\npublic class Country extends DataSupport {\r\n    private  int id;\r\n    private String countyName;\r\n    private   String weatherId;\r\n    private int cityId;\r\n\r\n    public int getId() {\r\n        return id;\r\n    }\r\n\r\n    public void setId(int cityId) {\r\n        this.cityId = cityId;\r\n    }\r\n\r\n    public String getCountyName() {\r\n        return countyName;\r\n    }\r\n\r\n    public void setCountyName(String countyName) {\r\n        this.countyName = countyName;\r\n    }\r\n\r\n    public String getWeatherId() {\r\n        return weatherId;\r\n    }\r\n\r\n    public void setWeatherId(String weatherId) {\r\n        this.weatherId = weatherId;\r\n    }\r\n\r\n    public int getCityId() {\r\n        return cityId;\r\n    }\r\n\r\n    public void setCityId(int cityId) {\r\n        this.cityId = cityId;\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/coolweather/android/db/Country.java	(revision 31a4a2b663acb4470540dff3699091c21cdb8fd1)
++++ app/src/main/java/com/coolweather/android/db/Country.java	(date 1563032854087)
+@@ -6,7 +6,7 @@
+ 
+ public class Country extends DataSupport {
+     private  int id;
+-    private String countyName;
++    private String countryName;
+     private   String weatherId;
+     private int cityId;
+ 
+@@ -18,12 +18,12 @@
+         this.cityId = cityId;
+     }
+ 
+-    public String getCountyName() {
+-        return countyName;
++    public String getCountryName() {
++        return countryName;
+     }
+ 
+-    public void setCountyName(String countyName) {
+-        this.countyName = countyName;
++    public void setCountyName(String countryName) {
++        this.countryName = countryName;
+     }
+ 
+     public String getWeatherId() {
